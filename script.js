@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+
     class Funcionario {
         #salario; // Encapsulamento (privado)
 
@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
             return `O salário de ${this.nome} é confidencial.`;
         }
     }
-
 
     class Medica extends Funcionario {
         falar() {
@@ -60,7 +59,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Criando instâncias dos funcionários
     const funcionarios = [
         new Medica("Yago", 26, 8000),
         new Enfermeiro("Rafael", 27, 5000),
@@ -78,4 +76,4 @@ document.addEventListener("DOMContentLoaded", function () {
         p.textContent = funcionario.falar() + " | " + funcionario.getSalario();
         funcionariosDiv.appendChild(p);
     });
-});
+
